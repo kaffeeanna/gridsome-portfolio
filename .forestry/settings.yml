@@ -7,7 +7,6 @@ sections:
 - type: document
   path: test
   label: Test
-  match: "**/*"
 - type: directory
   path: projects
   label: Projects
@@ -27,8 +26,8 @@ sections:
   label: Theme config
 upload_dir: uploads
 public_path: "/uploads"
-front_matter_path: ''
-use_front_matter_path: false
+front_matter_path: "/public"
+use_front_matter_path: true
 file_template: ":filename:"
 build:
   preview_output_directory: dist
